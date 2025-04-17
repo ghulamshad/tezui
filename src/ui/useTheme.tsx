@@ -1,3 +1,4 @@
+// src/ui/useTheme.tsx
 import { useTheme as useMUITheme } from '@mui/material/styles';
 
 const useTheme = () => {

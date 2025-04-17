@@ -1,22 +1,20 @@
+// src/stories/useTheme.stories.tsx
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { useTheme } from '../ui/useTheme';
+import useTheme from '../ui/useTheme'; // Correct import for default export
 import Typography from '../ui/Typography';
 
 export default {
-  title: 'Components/useTheme',
+  title: 'Components/UseTheme',
   component: useTheme,
 } as ComponentMeta<typeof useTheme>;
 
 const Template: ComponentStory<typeof useTheme> = (args) => {
   const theme = useTheme();
-
-  return (
-    <Typography variant="body1">
-      {`The primary color is ${theme.palette.primary.main}.`}
-    </Typography>
-  );
+  return <Typography {...args}>Current Theme: {JSON.stringify(theme)}</Typography>;
 };
 
 export const Default = Template.bind({});
-Default.args = {}; 
+Default.args = {
+  // Add default args here
+};

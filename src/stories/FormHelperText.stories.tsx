@@ -1,5 +1,4 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+// src/stories/FormHelperText.stories.tsx
 import FormHelperText from '../ui/FormHelperText';
 
 export default {
@@ -12,4 +11,4 @@ const Template: ComponentStory<typeof FormHelperText> = (args) => <FormHelperTex
 export const Default = Template.bind({});
 Default.args = {
   // Add default args here
-}; 
+};

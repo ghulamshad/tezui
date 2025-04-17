@@ -1,0 +1,1 @@
+import{j as s}from"./jsx-runtime-D_zvdyIk.js";import{L as e}from"./ListItemText-ZQ4bZVyh.js";const o=t=>s.jsx(e,{...t});o.__docgenInfo={description:"",methods:[],displayName:"ListItemText",composes:["MUIListItemTextProps"]};export{o as L};
