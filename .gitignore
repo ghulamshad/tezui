@@ -48,3 +48,5 @@ yarn.lock
 
 # React Native (if applicable)
 .expo/
+
+*storybook.log

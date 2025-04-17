@@ -9,16 +9,23 @@ import {
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-export interface TezAccordionProps extends MUIAccordionProps {
-  title: string;
-  children: React.ReactNode;
+interface AccordionProps extends MUIAccordionProps {
+  summary: string;
 }
 
-export const Accordion: React.FC<TezAccordionProps> = ({ title, children, ...props }) => {
+const Accordion: React.FC<AccordionProps> = ({
+  summary,
+  children,
+  ...props
+}) => {
   return (
     <MUIAccordion {...props}>
-      <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-        <Typography variant="subtitle1">{title}</Typography>
+      <AccordionSummary
+        expandIcon={<ExpandMoreIcon />}
+        aria-controls="panel1a-content"
+        id="panel1a-header"
+      >
+        <Typography>{summary}</Typography>
       </AccordionSummary>
       <AccordionDetails>
         {children}
@@ -26,3 +33,5 @@ export const Accordion: React.FC<TezAccordionProps> = ({ title, children, ...pro
     </MUIAccordion>
   );
 };
+
+export default Accordion;

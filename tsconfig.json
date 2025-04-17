@@ -10,7 +10,9 @@
       "baseUrl": "./src",
       "paths": {
         "@ui/*": ["ui/*"]
-      }
+      },
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true
     },
     "include": ["src"]
   }
