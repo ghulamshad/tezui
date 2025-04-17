@@ -1,16 +1,36 @@
 {
   "name": "tezui",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "TezUI - A reusable React component library built with MUI and Storybook.",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --project tsconfig.build.json",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepare": "npm run build",
+    "test": "vitest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "react",
+    "component-library",
+    "mui",
+    "tezui",
+    "storybook",
+    "vite",
+    "typescript"
+  ],
+  "author": "Ghulam Mustafa Shad",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.2.0 || ^19.0.0",
+    "react-dom": "^18.2.0 || ^19.0.0"
+  },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
@@ -37,5 +57,14 @@
     "storybook": "^8.6.12",
     "typescript": "^5.8.3",
     "vitest": "^3.1.1"
-  }
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ghulamshad/tezui"
+  },
+  "bugs": {
+    "url": "https://github.com/ghulamshad/tezui/issues"
+  },
+  "homepage": "https://tezui-qjnh-lo65kl5yx-mustafa-shads-projects.vercel.app"
 }
