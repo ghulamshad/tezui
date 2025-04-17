@@ -7,7 +7,7 @@
     ],
     "routes": [
       {
-        "src": "/storybook/(.*)",
+        "src": "/(.*)",
         "dest": "/storybook-static/$1"
       }
     ]
