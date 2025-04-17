@@ -1,1 +1,0 @@
-import{j as r}from"./jsx-runtime-D_zvdyIk.js";import{T as s}from"./Toolbar-92HdQc7Z.js";const a=o=>r.jsx(s,{...o});a.__docgenInfo={description:"",methods:[],displayName:"Toolbar",composes:["MUIToolbarProps"]};export{a as T};

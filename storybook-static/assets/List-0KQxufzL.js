@@ -1,1 +1,0 @@
-import{j as o}from"./jsx-runtime-D_zvdyIk.js";import{L as t}from"./List-KaPn0lEX.js";const i=s=>o.jsx(t,{...s});i.__docgenInfo={description:"",methods:[],displayName:"List",composes:["MUIListProps"]};export{i as L};
