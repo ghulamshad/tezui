@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "declaration": true,
+      "emitDeclarationOnly": true,
+      "outDir": "dist",
+      "jsx": "react-jsx",
+      "module": "ESNext",
+      "target": "ESNext",
+      "moduleResolution": "node",
+      "baseUrl": "./src",
+      "paths": {
+        "@ui/*": ["ui/*"]
+      }
+    },
+    "include": ["src"]
+  }
+  
